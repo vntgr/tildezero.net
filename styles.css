@@ -8,8 +8,9 @@ nav ul { padding:0;margin:0;display:flex; }
 nav ul li { list-style-type:none;white-space:none;margin-right:5px; }
 nav ul li a { text-decoration: underline; }
 a:hover { background-color:#000;color:#fff;text-decoration:none; }
-.tilde { margin-left:-17px;position:absolute; }
-.path { opacity:0.7; }
+.logo { width: 46px; margin-left: -6px; }
+h2 { display: flex; align-items: center; }
+.path { margin-left: 2px; }
 main { margin-top:10px; }
 p { margin-bottom:20px; }
 p:last-child { margin-bottom:0; }
