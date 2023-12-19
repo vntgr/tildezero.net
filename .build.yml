@@ -15,7 +15,7 @@ sources:
 tasks:
 - package: |
     cd $repo/
-    tar -C * -cvz . > ../site.tar.gz
+    tar -cvz . > ../site.tar.gz
 - upload: |
     hut pages publish --not-found /404.html -d $site site.tar.gz
 triggers: []
