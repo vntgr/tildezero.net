@@ -1,0 +1,22 @@
+arch: null
+artifacts: []
+environment:
+  BUILD_SUBMITTER: git.sr.ht
+  repo: tildezero.net
+  site: tildezero.net
+image: alpine/edge
+packages:
+- hut
+repositories: {}
+secrets: []
+shell: false
+sources:
+- https://git.sr.ht/~mysticmode/tildezero.net
+tasks:
+- package: |
+    cd $repo/
+    tar -C * -cvz . > ../site.tar.gz
+- upload: |
+    hut pages publish --not-found /404.html -d $site site.tar.gz
+triggers: []
+oauth: pages.sr.ht/PAGES:RW
